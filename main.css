@@ -1,10 +1,43 @@
+* {
 
+}
 
+body {
+  text-align: center;
+}
 
 h1 {
-  font-family: 'Edu NSW ACT Foundation', cursive;
+  font-family: 'Edu NSW ACT Foundation', serif;
 }
 
 #tweet-quote {
   text-decoration: none;
+}
+
+#quote-box {
+  margin: auto;
+  width: 50%;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+}
+
+#author {
+  font-size: 15px;
+}
+
+.quote-box {
+  border: 1px solid green;
+  padding: 20px 50px;
+}
+
+.footer > a {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.footer > a:hover {
+  color: black;
 }
