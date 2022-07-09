@@ -1,0 +1,33 @@
+{
+  "name": "frontend-cert",
+  "title": "Randon Quote Machine",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmolinarijr/Frontend-Cert.git"
+  },
+  "keywords": [
+    "random",
+    "project"
+  ],
+  "author": {
+    "name": "mmolinarijr",
+    "url": "https://github.com/mollinari"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmolinarijr/Frontend-Cert/issues"
+  },
+  "homepage": "https://github.com/mmolinarijr/Frontend-Cert#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "bootstrap-icons": "^1.8.3",
+    "jquery": "^3.6.0"
+  }
+}
