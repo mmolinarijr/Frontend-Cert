@@ -1,11 +1,12 @@
-import packageJson from '/package.json' assert {type: 'json'};
+import packageJson from '../../package.json' assert {type: 'json'};
+import {getColors, setBackgroundColor} from "./colors.js";
 
 $(document).ready( function (){
     getAppVersion()
     getQuotes()
     setQuotes()
     setBackgroundColor()
-    temp()
+    getColors()
 })
 
 function getAppVersion() {
@@ -38,15 +39,5 @@ function setQuotes() {
     // });
 }
 
-function setBackgroundColor() {
-    // const randomColor = Math.floor(Math.random()*16777214).toString(16);
-    // const configRandomColor = `#${randomColor}`;
-    // const btn = document.getElementById('new-quote');
-    //
-    // return btn.addEventListener('click', function onClick(event) {
-    //     document.body.style.backgroundColor = '#' + randomColor;
-    // })
 
-    // return document.getElementById("new-quote").style.backgroundColor = '#' + randomColor;
-}
 

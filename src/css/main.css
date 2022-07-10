@@ -1,13 +1,20 @@
 * {
-
+  --title-font: 'Playfair Display', serif;
+  --quote-font: 'Playfair Display', serif;
 }
 
 body {
   text-align: center;
+  /*background-color: #3b7a57;*/
 }
 
 h1 {
-  font-family: 'Edu NSW ACT Foundation', serif;
+  font-family: var(--title-font);
+}
+
+.container {
+  margin: auto;
+  width: 100%;
 }
 
 #tweet-quote {
@@ -19,9 +26,8 @@ h1 {
   width: 50%;
 }
 
-.container {
-  margin: auto;
-  width: 100%;
+#text {
+  font-family: var(--quote-font);
 }
 
 #author {
