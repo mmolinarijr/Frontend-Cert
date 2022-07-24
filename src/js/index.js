@@ -29,10 +29,15 @@ function getQuotes() {
     });
 }
 
-function setQuotes() {
-    const quotes = getQuotes();
+function setQuotes(data) {
+    let quoteText = $('.quote__text')
+    let quotes = getQuotes(data);
 
-    return console.log('quotes')
+    console.log('1', quotes);
+
+    return $('#new-quote').on('click', function () {
+        $('.quote__text').text(getQuotes(text));
+    })
 
     // return $('#new-quote').on('click', function (){
     //     $("#text").html(quotes);
