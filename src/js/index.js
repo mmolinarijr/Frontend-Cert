@@ -1,21 +1,8 @@
 import packageJson from '../../package.json' assert {type: 'json'};
-import {getColors, setBackgroundColor} from "./colors.js";
 
-$(document).ready( function (){
-    getAppVersion()
-    getQuotes()
-    setQuotes()
-    setBackgroundColor()
-    getColors()
-})
+$(document).ready(function () {
+    getAppVersion();
 
-function getAppVersion() {
-    const appVersion = packageJson.version;
-
-    return $('#app-version').html(appVersion);
-}
-
-function getQuotes() {
     const settings = {
         "async": true,
         "crossDomain": true,
@@ -23,25 +10,29 @@ function getQuotes() {
         "method": "GET"
     };
 
-    return $.ajax(settings).done(function (response) {
-        const data = JSON.parse(response);
-        return console.log(data);
+    $.ajax(settings).done(function (response) {
+        const data =  JSON.parse(response);
+        const quoteText = $('.quote__text');
+        const quoteAuthor = $('.quote__author');
+        const getNewQuote = $('#new-quote');
+
+        $(getNewQuote).on('click', function () {
+            let random = Math.floor(Math.random() * data.length);
+            let newQuote = data[random];
+
+            $(quoteText).text(newQuote.text);
+            $(quoteAuthor).text(newQuote.author);
+
+            if (newQuote.author === null) {
+                $(quoteAuthor).text('Unknown');
+            }
+        })
     });
-}
+});
 
-function setQuotes(data) {
-    let quoteText = $('.quote__text')
-    let quotes = getQuotes(data);
-
-    console.log('1', quotes);
-
-    return $('#new-quote').on('click', function () {
-        $('.quote__text').text(getQuotes(text));
-    })
-
-    // return $('#new-quote').on('click', function (){
-    //     $("#text").html(quotes);
-    // });
+function getAppVersion() {
+    const appVersion = packageJson.version;
+    return $('#app-version').html(appVersion);
 }
 
 

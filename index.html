@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="src/css/main.css" rel="stylesheet">
-    
-    <link rel="icon" href="/src/img/favicon.svg" sizes="any">
-    <link rel="icon" href="src/img/favicon.svg" type="image/svg+xml">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap" rel="stylesheet">
-    
-    <title>Random Quote Machine</title>
-</head>
-<body>
-    <header class="container">
-    
-    </header>
-    <main class="container">
-        <div id="quote-box" class="flex p-5">
-            <img src="src/img/spinning-gear.gif" alt="">
-            <h1 class="">Random Quote Machine</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="author" content="mmolinarijr">
+        <meta name="description" content="Random Quote Machine Project - FreeCodeCamp Certification Program">
+        <meta name="keywords" content="HTML, CSS, Javascript, Jquery, Bootstrap, FreeCodeCamp, Certification">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="./node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+        <link href="src/css/main.css" rel="stylesheet">
+        
+        <link rel="icon" href="/src/img/favicon.svg" sizes="any">
+        <link rel="icon" href="src/img/favicon.svg" type="image/svg+xml">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap" rel="stylesheet">
+        
+        <title>Random Quote Machine</title>
+    </head>
+    <body class="container-fluid">
+        <header class="container mt-3">
+            <img class="img-fluid" src="src/img/spinning-gear.gif" alt="Spinning Gear">
+            <h1>Random Quote Machine</h1>
             <hr>
-            <section class="quote-box">
-                <h3 id="text">
-                    <cite>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
-                            <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+        </header>
+        <main class="container">
+            <section class="quote-box row">
+                <div class="col-12">
+                    <h3 class="text m-3">
+                        <cite>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                                 class="bi bi-quote" viewBox="0 0 16 16">
+                                <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                            </svg>
+                            <span class="quote__text">You can observe a lot just by watching.</span>
+                        </cite>
+                    </h3>
+                    <p>- <span class="quote__author">Yogi Berra</span></p>
+                    
+                    <button id="new-quote" class="btn btn-success m-2">New Quote</button>
+                    
+                    <a type="button" id="tweet-quote" class="btn btn-outline-primary m-2"
+                       href="https://twitter.com/intent/tweet" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
                         </svg>
-                        <span class="quote__text">You can observe a lot just by watching.</span>
-                    </cite>
-                </h3>
-                <p id="author">- Yogi Berra</p>
-    
-                <button id="new-quote" class="btn btn-outline-success" href="">Get new Quote</button>
-    
-                <a id="tweet-quote" class="btn btn-outline-primary" href="twitter.com/intent/tweet" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                    Tweet it
-                </a>
+                        Tweet it
+                    </a>
+                </div>
             </section>
-        </div>
-        <footer class="footer blockquote-footer ">by <a class="footer__link" href="https://github.com/mollinari">mmolinarijr</a> <sup>v <span id="app-version"></span></sup></footer>
-    </main>
-    
-    <script>
-            // function temp() {
-            //     const randomColor = Math.floor(Math.random()*16777219).toString(16);
-            //     const configRandomColor = `#${randomColor}`;
-            //
-            //     $("body").css("background-color", configRandomColor);
-            // }
-    </script>
-    <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="src/js/index.js" type="module"></script>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+        </main>
+        <footer class="footer blockquote-footer mt-5">by <a class="footer__link" href="https://github.com/mollinari">mmolinarijr</a>
+            <sup>v <span id="app-version"></span></sup>
+        </footer>
+        
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="src/js/index.js" type="module"></script>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
 </html>
