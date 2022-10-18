@@ -1,0 +1,8 @@
+:root {
+  --default-font: 'Playfair Display', serif;
+}
+
+body {
+  font-family: var(--default-font);
+  text-align: center;
+}

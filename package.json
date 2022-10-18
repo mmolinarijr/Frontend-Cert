@@ -1,0 +1,28 @@
+{
+  "name": "frontend-cert",
+  "title": "Markdown Previewer",
+  "version": "0.0.1",
+  "description": "Project developed for FreeCodeCamp Certification",
+  "main": "src/js/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmolinarijr/Frontend-Cert.git"
+  },
+  "keywords": [
+    "random quote",
+    "project"
+  ],
+  "author": {
+    "name": "mmolinarijr",
+    "url": "https://github.com/mollinari"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmolinarijr/Frontend-Cert/issues"
+  },
+  "homepage": "https://github.com/mmolinarijr/Frontend-Cert#readme"
+}
