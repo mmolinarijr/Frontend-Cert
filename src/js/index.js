@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     $.ajax(settings).done(function (response) {
         const data =  JSON.parse(response);
-        const quoteText = $('#text');
+        const quoteText = $('.quote__text');
         const quoteAuthor = $('#author');
         const getNewQuote = $('#new-quote');
 
