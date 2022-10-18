@@ -7,19 +7,13 @@ body {
   text-align: center;
 }
 
-/*.container {*/
-/*  margin: auto;*/
-/*  width: 100%;*/
-/*}*/
-
-.quote-box {
+#quote-box {
   margin: auto;
   width: 50%;
   border: 1px solid lightgrey;
-  /*padding: 20px 50px;*/
 }
 
-.text {
+#text {
   font-family: var(--default-font);
   font-weight: 100;
   font-size: 1.5em;
@@ -29,7 +23,7 @@ body {
   text-decoration: none;
 }
 
-.quote__author {
+#author {
   font-size: 15px;
 }
 

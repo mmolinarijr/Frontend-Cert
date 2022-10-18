@@ -1,7 +1,7 @@
 {
   "name": "frontend-cert",
   "title": "Randon Quote Machine",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Project developed for FreeCodeCamp Certification",
   "main": "src/js/index.js",
   "type": "module",

@@ -12,8 +12,8 @@ $(document).ready(function () {
 
     $.ajax(settings).done(function (response) {
         const data =  JSON.parse(response);
-        const quoteText = $('.quote__text');
-        const quoteAuthor = $('.quote__author');
+        const quoteText = $('#text');
+        const quoteAuthor = $('#author');
         const getNewQuote = $('#new-quote');
 
         $(getNewQuote).on('click', function () {
