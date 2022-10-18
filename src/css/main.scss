@@ -1,0 +1,8 @@
+@import './abstracts/variables';
+@import './components/header';
+@import './components/footer';
+
+
+body {
+    font-family: $default-font;
+}

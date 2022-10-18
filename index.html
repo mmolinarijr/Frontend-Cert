@@ -23,15 +23,18 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
         <script src="src/js/index.js" type="module" defer></script>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.1.1/marked.min.js" integrity="sha512-+mCmSlBpa1bF0npQzdpxFWIyJaFbVdEcuyET6FtmHmlXIacQjN/vQs1paCsMlVHHZ2ltD2VTHy3fLFhXQu0AMA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
         
         <title>Markdown Previewer</title>
     </head>
     <body class="container-fluid">
         <header class="container mt-3">
-            <h1>Markdown Previewer</h1>
+            <h1>Markdown Editor & Previewer</h1>
             <hr>
         </header>
         <main class="container">
+            <section id="editor"></section>
+            <section id="preview"></section>
         </main>
         <footer class="footer blockquote-footer mt-5">by <a class="footer__link" href="https://github.com/mollinari">mmolinarijr</a>
             <sup>v <span id="app-version"></span></sup>

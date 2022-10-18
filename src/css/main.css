@@ -1,8 +1,11 @@
-:root {
-  --default-font: 'Playfair Display', serif;
+header {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
 }
 
 body {
-  font-family: var(--default-font);
-  text-align: center;
-}
+  font-family: "Playfair Display", serif;
+}/*# sourceMappingURL=main.css.map */
