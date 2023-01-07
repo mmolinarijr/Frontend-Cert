@@ -1,4 +1,4 @@
-import { Container, Box, Stack, NumberInput, NumberInputField } from '@chakra-ui/react';
+import { Container, Box, Button, Stack, Input, NumberInput, NumberInputField } from '@chakra-ui/react';
 import { useState } from 'react';
 
 interface Calc {
@@ -16,9 +16,14 @@ function Calculator(props: Calc) {
         <Box>
             <Stack>
                 <Container>
+                    <Button onClick={() => handleClick(1)}>AC</Button>
+                    <Button onClick={() => handleClick(1)}>/</Button>
+                    <Button onClick={() => handleClick(1)}>X</Button>
+                    <Button onClick={() => handleClick(1)}>-</Button>
+                    <Button onClick={() => handleClick(1)}>+</Button>
+                    <Button onClick={() => handleClick(1)}>=</Button>
+                    <Input value={value} readOnly />
                     <NumberInput>
-                        <NumberInputField value={value} readOnly />
-                        <NumberInputField onClick={() => handleClick(1)}>+1</NumberInputField>
                         <NumberInputField />
                         <NumberInputField />
                         <NumberInputField />
