@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: frontend-certification
+    image: frontend-certification
+    # restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      - WATCHPACK_POLLING=true
+    networks:
+      - freecodecamp
+
+networks:
+  freecodecamp:
+    driver: bridge
